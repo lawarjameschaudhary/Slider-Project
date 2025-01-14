@@ -13,7 +13,7 @@
   --border-color: rgb(216, 213, 213);
   --transition-speed: 1s;
   --container-height: 500px;
-  --container-width: 32%;
+  --container-width: 550px;
   --zoom-scale: 1.2;
   --image-radius: 30px;
   --profile-dimension: 70px;
@@ -91,7 +91,7 @@ body {
   border-radius: var(--image-radius);
   background-color: var(--image-bg-color);
   box-shadow: inset 10px 10px 10px var(--shadow-color);
-  width: 500px;
+  width: 100%;
   height: 200px;
 }
 
@@ -131,4 +131,43 @@ body {
 .about {
   width: 70%;
   height: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 350px;
+    margin: 250px auto;
+    padding: 10px;
+  }
+
+  .main-image {
+    width: 300px;
+    height: 100px;
+  }
+  .box-container{
+    display: flex;
+  }
+  .profile-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .description {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .header-desc {
+    width: 100%;
+    height: 15px;
+  }
+
+  .about {
+    width: 80%;
+    height: 8px;
+  }
+
+  .description-section {
+    gap: 10px;
+  }
 }
